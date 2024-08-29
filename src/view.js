@@ -42,7 +42,7 @@ const runMenuNavigation = () => {
   });
 };
 
-const runSlider = (e) => {
+const runSlider = () => {
   new Splide('.splide', {
     type: 'loop',
     perPage: 2,
@@ -110,6 +110,11 @@ const renderCloseMenu = () => {
     perMove: 3,
     gap: '20px',
     pagination: false,
+    breakpoints: {
+      430: {
+        perPage: 1,
+      },
+    },
   }).mount();
 }
 
@@ -119,6 +124,7 @@ const renderOpenMenu = () => {
     menuCloseBtn.style.display = 'block';
     articleDescription.classList.add('disabled');
     menuOpenBtn.style.display = 'none';
+    runSlider();
   }
 
   if (window.innerWidth < 431) {
@@ -134,13 +140,6 @@ const renderOpenMenu = () => {
   mainContent.classList.remove('max-width');
   menuCloseBtn.style.display = 'block';
   menuOpenBtn.style.display = 'none';
-  new Splide('.splide', {
-    type: 'loop',
-    perPage: 2,
-    perMove: 1,
-    gap: '20px',
-    pagination: false,
-  }).mount();
 };
 
 export {
