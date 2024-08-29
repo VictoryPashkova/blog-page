@@ -22,6 +22,22 @@ const runApp = () => {
       },
     }
   };
+  
+  const setInitialMenuState = () => {
+    const currentWindowWidth = window.innerWidth;
+    if (currentWindowWidth > 769) {
+      appState.uiState.menu.size = 'XL';
+      appState.uiState.menu.isOpened = true;
+    } else if (currentWindowWidth > 431) {
+      appState.uiState.menu.size = 'MD';
+      appState.uiState.menu.isOpened = false;
+    } else {
+      appState.uiState.menu.size = 'XS';
+      appState.uiState.menu.isOpened = false;
+    }
+  };
+
+  setInitialMenuState();
 
   const watchedState = onChange(appState, (path, value) => {
     if (path === 'uiState.menu.isOpened') {
