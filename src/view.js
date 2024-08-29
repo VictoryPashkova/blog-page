@@ -119,7 +119,6 @@ const renderOpenMenu = () => {
     menuCloseBtn.style.display = 'block';
     articleDescription.classList.add('disabled');
     menuOpenBtn.style.display = 'none';
-    console.log('open');
   }
 
   if (window.innerWidth < 431) {
