@@ -781,7 +781,7 @@ ol {
       position: absolute;
       background-image: url('../assets/images/menu-btn-open.svg');
       top: 70px;
-      left: 350px;
+      left: 310px;
       transform: translate(-50%, -50%);
     }
 
@@ -792,7 +792,7 @@ ol {
       height: 52px;
       background-image: url('../assets/images/menu-btn-cls.svg');
       top: 60px;
-      left: 350px;
+      left: 310px;
       transform: translate(-50%, -50%);
     }
 
