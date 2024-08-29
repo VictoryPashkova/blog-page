@@ -1,20 +1,20 @@
-# Website demo 'Budss for Business'
+# Страница Блога
 
-[Project Link](https://frontend-project-demo-web.vercel.app/) 
+[Страница блога](https://blog-page-1.vercel.app/) 
 
-## About
+## О проекте
 
-Business card site with valid, semantic, rubber and adaptive layout on flex-box and BEM, contact form with validation on yup lib. The layout is correctly displayed in Google Chrome and Firefox. 
+Этот проект представляет собой страницу блога с одной статьей, выполненную с адаптивной версткой, которая хорошо отображается на ПК, мобильных устройствах и планшетах. Страница включает в себя следующие ключевые элементы:
 
-#### Additional module: slider with animation on pure JS. 
+## Особенности
 
-#### Build: Webpack.
+- **Адаптивная Верстка**: Дизайн страницы автоматически подстраивается под различные устройства, включая ПК, мобильные устройства и планшеты, обеспечивая удобное чтение и взаимодействие.
+- **Слайдер Рекомендуемых Постов**: Интерактивный слайдер, реализованный с помощью [Splide](https://splidejs.com/), позволяет пользователям просматривать рекомендуемые посты.
+- **Прогресс-Бар**: Визуализирует текущий прогресс прокрутки статьи, предоставляя пользователю информацию о том, сколько контента осталось прочитать.
+- **Навигация по Странице**: Боковое меню позволяет пользователю легко перемещаться между различными разделами статьи и быстро находить нужную информацию.
 
-## System requirements
-Node.js version - v20.4.0
+## Установка
 
-## How to start the project
-
-- _**git clone git@github.com:VictoryPashkova/frontend-project-demo-web.git**_ to copy the repository to your computer
-- _**npm CI**_ to install all dependencies
-- _**npx webpack serve**_ to run local server
+- _**git@github.com:VictoryPashkova/blog-page.git**_ клонируйте репозиторий
+- _**npm install**_ установите зависимости проекта
+- _**npx webpack serve**_ запустите локальный сервер
